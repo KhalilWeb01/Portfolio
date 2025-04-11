@@ -592,3 +592,136 @@ main {
 .achievement-box p {
     font-size: 1.2rem;
 }
+/* ========== АДАПТИВНОСТЬ: МОБИЛЬНЫЕ УСТРОЙСТВА ========== */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    margin: 0 auto 10px auto;
+    width: 60px;
+    height: auto;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbar-list li {
+    margin: 10px 0;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .text-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .my {
+    width: 90%;
+    left: 0;
+    transform: scaleX(-1);
+  }
+
+  .about-me {
+    flex-direction: column;
+    padding: 30px 20px;
+    height: auto;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .info {
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .listings-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+  }
+
+  .listing-item {
+    flex: 0 0 80%;
+    margin: 0 auto;
+  }
+
+  .carousel-container {
+    padding: 10px;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+
+  .testimonials {
+    padding: 40px 10px;
+  }
+
+  .testimonial-item {
+    padding: 20px 10px;
+  }
+
+  .contact {
+    padding: 40px 10px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-item {
+    width: 100%;
+  }
+
+  .achievements-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement-box {
+    width: 90%;
+  }
+
+  .achievement-box h3 {
+    font-size: 2rem;
+  }
+
+  .achievement-box p {
+    font-size: 1rem;
+  }
+}
