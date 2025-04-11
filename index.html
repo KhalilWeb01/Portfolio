@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="ресурсы/aaronz.jpg" alt="">
+        <ul class="navbar-list">
+
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about-me">Обо мне</a></li>
+            <li><a href="#listings">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    <header class="header" id="home">
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+                <source src="ресурсы/91744-636709154.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-content">
+            <div class="text_container">
+                <h1>Обо мне</h1>
+                <p class="typing-text">Я — Халил, опытный риелтор в Дубае. Моя цель — помочь вам найти идеальное жилье,
+                    соответствующее вашим требованиям.</p>
+                <!-- Кнопка Контакты со мной -->
+                <a href="#contact" class="contact-button">Контакты со мной</a>
+            </div>
+    
+            <img class="my" src="ресурсы/Me.png" alt="">
+        </div>
+    </header>
+    <main>
+        <!-- Обо мне -->
+        <section class="about-me fade-in fade-right" id="about-me">
+            <div class="info">
+                <h1>Халил — Риелтор</h1>
+                <p>Я профессионал в сфере недвижимости с особым вниманием к деталям и стремлением помочь клиентам найти лучший вариант для проживания или инвестиций. Моя цель — предоставить вам персонализированный сервис, основываясь на ваших потребностях и требованиях.</p>
+            </div>
+        
+        </section>
+
+    <!-- My Dostijenia -->
+
+    <section id="achievements" class="achievements-section fade-in fade-bottom">
+        <h2>Мои достижения</h2>
+        <div class="achievements-container">
+            <div class="achievement-box">
+                <i class="fa-solid fa-file-signature fa-3x"></i>
+                <h3 class="counter" data-target="38">0</h3>
+                <p>Успешных сделок</p>
+            </div>
+            
+            <div class="achievement-box">
+                <i class="fa-solid fa-users fa-3x"></i>
+                <h3 class="counter" data-target="37">0</h3>
+                <p>Довольных клиентов</p>
+            </div>
+            
+            <div class="achievement-box">
+                <i class="fa-solid fa-building fa-3x"></i>
+                <h3 class="counter" data-target="11">0</h3>
+                <p>Премиальных объектов</p>
+            </div>
+            
+            <div class="achievement-box">
+                <i class="fa-solid fa-handshake fa-3x"></i>
+                <h3 class="counter" data-target="50">0</h3>
+                <p>Надежных партнёров</p>
+            </div>
+            
+        </div>
+    </section>
+    
+        <!-- Секция "Мои листинги" -->
+        <div class="bg">
+            <section id="listings" class="listings fade-in fade-left">
+                <h2>Мои листинги</h2>
+        
+                <div class="carousel-container">
+                    <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+        
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Листинги -->
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/Alifiya/Photos/1.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Fully furnished property, Golf view.</p>
+                            <p><strong>Цена:</strong> 88 000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Damac Hills</p>
+                                <p><strong>Площадь:</strong> 642.39 ft²</p>
+                                <p><strong>Этаж:</strong> 18</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                                <p><strong>Меблировка:</strong> Fully furnished</p>
+                            </div>
+                        </div>
+        
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/Amen/Pictures/1.jpg" alt="Вилла" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Fully furnished Apartment for Rent.</p>
+                            <p><strong>Цена:</strong> 70 000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Площадь:</strong> 429.26 ft²</p>
+                                <p><strong>Bedroom:</strong> 1</p>
+                                <p><strong>Бассейн:</strong> Частный</p>
+                                <p><strong>Вид:</strong> Golf Lagune</p>
+                            </div>
+                        </div>
+        
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555859.jpg" alt="Вилла" />
+                            <h3>Вилла в районе Palm Jumeirah</h3>
+                            <p>Современная вилла с видом на море и ремонтом.</p>
+                            <p><strong>Цена:</strong> 5,200,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Площадь:</strong> 4200 ft²</p>
+                                <p><strong>Спальни:</strong> 5</p>
+                                <p><strong>Бассейн:</strong> Частный</p>
+                                <p><strong>Вид:</strong> Море</p>
+                            </div>
+                        </div>
+        
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/Amen/Pictures/Изображение WhatsApp 2025-04-03 в 17.07.24_8f951a9f.jpg" alt="Вилла" />
+                            <h3>Вилла в районе Palm Jumeirah</h3>
+                            <p>Современная вилла с видом на море и ремонтом.</p>
+                            <p><strong>Цена:</strong> 5,200,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Площадь:</strong> 4200 ft²</p>
+                                <p><strong>Спальни:</strong> 5</p>
+                                <p><strong>Бассейн:</strong> Частный</p>
+                                <p><strong>Вид:</strong> Море</p>
+                            </div>
+                        </div>
+        
+                        <!-- Продолжение листингов -->
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/Amen/Pictures/Изображение WhatsApp 2025-04-03 в 17.07.25_98f989d3.jpg" alt="Квартира" />
+                            <h3>Modern Studio for Rent</h3>
+                            <p>Cozy studio apartment with a city view.</p>
+                            <p><strong>Цена:</strong> 40,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Downtown</p>
+                                <p><strong>Площадь:</strong> 500 ft²</p>
+                                <p><strong>Этаж:</strong> 5</p>
+                                <p><strong>Балкон:</strong> Нет</p>
+                                <p><strong>Меблировка:</strong> Частично меблирована</p>
+                            </div>
+                        </div>
+        
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/Amen/Pictures/Изображение WhatsApp 2025-04-03 в 17.07.26_0ffc8d4f.jpg" alt="Вилла" />
+                            <h3>Luxury Villa for Sale</h3>
+                            <p>Exquisite villa with sea views and private pool.</p>
+                            <p><strong>Цена:</strong> 12,000,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Площадь:</strong> 5500 ft²</p>
+                                <p><strong>Спальни:</strong> 6</p>
+                                <p><strong>Бассейн:</strong> Частный</p>
+                                <p><strong>Вид:</strong> Море</p>
+                            </div>
+                        </div>
+        
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555860.jpg" alt="Вилла" />
+                            <h3>Premium Apartment for Sale</h3>
+                            <p>Spacious apartment with high-end finishes.</p>
+                            <p><strong>Цена:</strong> 3,500,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Площадь:</strong> 3200 ft²</p>
+                                <p><strong>Спальни:</strong> 4</p>
+                                <p><strong>Вид:</strong> Город</p>
+                                <p><strong>Бассейн:</strong> Общественный</p>
+                            </div>
+                        </div>
+        
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/Amen/Pictures/Изображение WhatsApp 2025-04-03 в 17.07.28_3961b3f0.jpg" alt="Вилла" />
+                            <h3>Cozy Beachfront Apartment for Sale</h3>
+                            <p>Modern apartment with direct beach access.</p>
+                            <p><strong>Цена:</strong> 8,000,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Площадь:</strong> 2100 ft²</p>
+                                <p><strong>Спальни:</strong> 3</p>
+                                <p><strong>Вид:</strong> Море</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+        
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/1-bedroom-apartment-for-Sale-in-Golf-Vita-15.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/406543783.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+                        <div class="listing-item" onclick="toggleDetails(this)">
+                            <img src="Rental/golf vita 1419/pictures/406543799.jpg" alt="Квартира" />
+                            <h3>Apartment for Rent</h3>
+                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
+                            <p><strong>Цена:</strong> 65,000 AED</p>
+                            <div class="listing-details">
+                                <p><strong>Район:</strong> Marina</p>
+                                <p><strong>Площадь:</strong> 850 ft²</p>
+                                <p><strong>Этаж:</strong> 10</p>
+                                <p><strong>Балкон:</strong> Да</p>
+                            </div>
+                        </div>
+        
+                        <!-- Можно добавить еще 28 листингов аналогично -->
+                    </div>
+        
+                    <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+                </div>
+            </section>
+        </div>
+       
+        <!-- Отзывы -->
+        <section class="testimonials fade-in fade-bottom">
+            <h2>Отзывы клиентов</h2>
+            <div class="testimonial-carousel">
+                <button class="carousel-btn left" onclick="scrollTestimonials(-1)">&#10094;</button>
+        
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-item">
+                        <p>“Халил — профессионал с большой буквы. Сделка прошла легко, всё было понятно и быстро.”</p>
+                        <h4>— Мария, покупка квартиры в Marina</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Очень благодарен за помощь в аренде жилья. Отличная коммуникация и честные условия.”</p>
+                        <h4>— Алексей, аренда в JVC</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Сомневался в начале, но Халил помог выбрать лучший вариант на рынке. Рекомендую!”</p>
+                        <h4>— Дмитрий, инвестиция в Business Bay</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Халил нашёл для нас идеальный дом в кратчайшие сроки. Профессионал своего дела!”</p>
+                        <h4>— Алексей, аренда квартиры</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Очень доволен сделкой. Всё чётко, без лишней суеты. Обязательно обращусь снова.”</p>
+                        <h4>— Дмитрий, покупка апартаментов</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Приятно работать с человеком, который знает рынок изнутри. Спасибо за помощь!”</p>
+                        <h4>— Амина, инвестиции в недвижимость</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Халил нашёл отличного арендатора для моей квартиры всего за пару дней.”</p>
+                        <h4>— Надежда, сдача недвижимости</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Отличный подход к клиенту. Всё объяснил, показал и помог с оформлением.”</p>
+                        <h4>— Тимур, покупка студии</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>“Благодаря Халилу я нашёл квартиру мечты — с видом на Бурдж Халифа и по хорошей цене.”</p>
+                        <h4>— Юлия, покупка недвижимости</h4>
+                    </div>
+                    
+                </div>
+        
+                <button class="carousel-btn right" onclick="scrollTestimonials(1)">&#10095;</button>
+            </div>
+        </section>
+        
+    
+        <section id="contact" class="contact fade-in fade-top">
+            <h2>Контакты со мной</h2>
+            <p>Если у вас есть вопросы или вы хотите обсудить недвижимость, не стесняйтесь обращаться ко мне!</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p><strong>Телефон:</strong> +971 55 526 5448</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> mirzahalil@aaronz.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Адрес:</strong> Дубай, ОАЭ</p>
+                </div>
+            </div>
+            
+            <a href="mailto:halil@example.com" class="contact-button">Связаться со мной</a>
+        </section>
+        
+    
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+
+    
+</html>
