@@ -5,13 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfoilo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 
 <body>
     <nav class="navbar">
+            <!-- Кнопка-бургер -->
+<div class="burger" id="burger">
+    ☰
+</div>
+
+<!-- Мобильное меню -->
+<ul class="mobile-nav" id="mobileNav">
+    <li><a href="#about">Обо мне</a></li>
+    <li><a href="#listings">Объекты</a></li>
+    <li><a href="#achievements">Достижения</a></li>
+    <li><a href="#contact">Контакты</a></li>
+    <li><a href="pages/login.html">Admin</a></li>
+</ul>
+
+
         <img class="logo" src="ресурсы/aaronz.jpg" alt="">
         <ul class="navbar-list">
 
@@ -20,6 +36,7 @@
             <li><a href="#listings">Услуги</a></li>
             <li><a href="#portfolio">Портфолио</a></li>
             <li><a href="#contact">Контакты</a></li>
+            <li><a href="pages/login.html">Admin</a></li>
         </ul>
     </nav>
     <header class="header" id="home">
@@ -120,37 +137,35 @@
                         </div>
         
                         <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555859.jpg" alt="Вилла" />
-                            <h3>Вилла в районе Palm Jumeirah</h3>
-                            <p>Современная вилла с видом на море и ремонтом.</p>
+                            <img src="Rental/golf vita 1419/pictures/322555866.jpg" alt="Вилла" />
+                            <h3>Вилла в районе Damac Hills</h3>
+                            <p>Современная вилла с ремонтом.</p>
                             <p><strong>Цена:</strong> 5,200,000 AED</p>
                             <div class="listing-details">
                                 <p><strong>Площадь:</strong> 4200 ft²</p>
                                 <p><strong>Спальни:</strong> 5</p>
                                 <p><strong>Бассейн:</strong> Частный</p>
-                                <p><strong>Вид:</strong> Море</p>
                             </div>
                         </div>
         
                         <div class="listing-item" onclick="toggleDetails(this)">
                             <img src="Rental/Amen/Pictures/Изображение WhatsApp 2025-04-03 в 17.07.24_8f951a9f.jpg" alt="Вилла" />
-                            <h3>Вилла в районе Palm Jumeirah</h3>
-                            <p>Современная вилла с видом на море и ремонтом.</p>
-                            <p><strong>Цена:</strong> 5,200,000 AED</p>
+                            <h3>Apartment for Sale</h3>
+                            <p>Современная Apartment с видом на Golf course.</p>
+                            <p><strong>Цена:</strong> 1,200,000 AED</p>
                             <div class="listing-details">
-                                <p><strong>Площадь:</strong> 4200 ft²</p>
-                                <p><strong>Спальни:</strong> 5</p>
-                                <p><strong>Бассейн:</strong> Частный</p>
-                                <p><strong>Вид:</strong> Море</p>
+                                <p><strong>Площадь:</strong> 3200 ft²</p>
+                                <p><strong>Спальни:</strong> 2</p>
+                                <p><strong>Вид:</strong> Golf course</p>
                             </div>
                         </div>
         
                         <!-- Продолжение листингов -->
                         <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/Amen/Pictures/Изображение WhatsApp 2025-04-03 в 17.07.25_98f989d3.jpg" alt="Квартира" />
+                            <img src="Rental/golf vita 1419/pictures/322555859.jpg" alt="Квартира" />
                             <h3>Modern Studio for Rent</h3>
                             <p>Cozy studio apartment with a city view.</p>
-                            <p><strong>Цена:</strong> 40,000 AED</p>
+                            <p><strong>Цена:</strong> 80,000 AED</p>
                             <div class="listing-details">
                                 <p><strong>Район:</strong> Downtown</p>
                                 <p><strong>Площадь:</strong> 500 ft²</p>
@@ -174,7 +189,7 @@
                         </div>
         
                         <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555860.jpg" alt="Вилла" />
+                            <img src="Rental/golf vita 1419/pictures/576332448.jpg" alt="Вилла" />
                             <h3>Premium Apartment for Sale</h3>
                             <p>Spacious apartment with high-end finishes.</p>
                             <p><strong>Цена:</strong> 3,500,000 AED</p>
@@ -190,7 +205,7 @@
                             <img src="Rental/Amen/Pictures/Изображение WhatsApp 2025-04-03 в 17.07.28_3961b3f0.jpg" alt="Вилла" />
                             <h3>Cozy Beachfront Apartment for Sale</h3>
                             <p>Modern apartment with direct beach access.</p>
-                            <p><strong>Цена:</strong> 8,000,000 AED</p>
+                            <p><strong>Цена:</strong> 4,000,000 AED</p>
                             <div class="listing-details">
                                 <p><strong>Площадь:</strong> 2100 ft²</p>
                                 <p><strong>Спальни:</strong> 3</p>
@@ -199,138 +214,11 @@
                             </div>
                         </div>
         
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/1-bedroom-apartment-for-Sale-in-Golf-Vita-15.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/406543783.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/322555861.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
-                        <div class="listing-item" onclick="toggleDetails(this)">
-                            <img src="Rental/golf vita 1419/pictures/406543799.jpg" alt="Квартира" />
-                            <h3>Apartment for Rent</h3>
-                            <p>Comfortable 2-bedroom apartment for rent in a quiet neighborhood.</p>
-                            <p><strong>Цена:</strong> 65,000 AED</p>
-                            <div class="listing-details">
-                                <p><strong>Район:</strong> Marina</p>
-                                <p><strong>Площадь:</strong> 850 ft²</p>
-                                <p><strong>Этаж:</strong> 10</p>
-                                <p><strong>Балкон:</strong> Да</p>
-                            </div>
-                        </div>
+      
+       
+           
+                                                  
+                    
         
                         <!-- Можно добавить еще 28 листингов аналогично -->
                     </div>
@@ -413,15 +301,11 @@
             </div>
             
             <a href="mailto:halil@example.com" class="contact-button">Связаться со мной</a>
-        </section>
-        
-    
-
-
+        </section>  
 
 
 </body>
-<script src="script.js"></script>
+<script src="scripts/script.js"></script>
 
 
     

@@ -1,0 +1,231 @@
+/* ===== Мобильные устройства до 768px ===== */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-list li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    .my {
+        width: 100%;
+        left: 0;
+        transform: scaleX(-1);
+        margin-top: 30px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        background-size: cover;
+    }
+
+    .info {
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .listings-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .listing-item {
+        width: 90%;
+    }
+
+    .achievements-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievement-box {
+        width: 90%;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%;
+    }
+}
+/* Скрываем бургер и мобильное меню на больших экранах */
+.burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1001;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    /* height: 100vh; */
+    /* background-color: rgba(0, 0, 0, 0.95); */
+    border: solid blue 3px;
+    padding: 50px 50px;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    border-radius: 60px;
+}
+
+.mobile-nav li {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Показать, когда активен */
+.mobile-nav.open {
+    right: 10px;
+}
+
+/* Показываем бургер на мобильных */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+}
+    /* Общие стили */
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    
+    /* Появление сверху */
+    .fade-top {
+        transform: translateY(-30px);
+    }
+    
+    .fade-top.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Появление снизу */
+    .fade-bottom {
+        transform: translateY(30px);
+    }
+    
+    .fade-bottom.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Появление слева */
+    .fade-left {
+        transform: translateX(-30px);
+    }
+    
+    .fade-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    /* Появление справа */
+    .fade-right {
+        transform: translateX(30px);
+    }
+    
+    .fade-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .achievements-section {
+        background-color: #000;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    
+    .achievements-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    .achievements-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    
+    .achievement-box {
+        background-color: #1c1c1c;
+        padding: 30px;
+        border-radius: 20px;
+        width: 220px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow:
+            0 0px 10px rgba(0, 153, 255, 0.3),
+            0 0px 20px rgba(0, 102, 204, 0.2),
+            0 0px 69px 5px rgba(0, 51, 204, 0.15);
+    }
+    
+    .achievement-box:hover {
+        transform: scale(1.05);
+        box-shadow:
+            0 0px 15px rgba(0, 153, 255, 0.5),
+            0 0px 30px rgba(0, 102, 204, 0.4),
+            0 0px 69px 10px rgba(0, 51, 204, 0.25);
+    }
+    
+    .achievement-box img {
+        width: 60px;
+        margin-bottom: 20px;
+        filter: invert(100%);
+    }
+    
+    .achievement-box h3 {
+        font-size: 2.5rem;
+        color: #00aaff;
+    }
+    
+    .achievement-box p {
+        font-size: 1.2rem;
+    }
